@@ -1,4 +1,4 @@
-module gitblog
+module Sigi
 
 go 1.21
 
