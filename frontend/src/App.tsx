@@ -1,5 +1,6 @@
-import {useState} from 'react';
-import {Greet} from "../wailsjs/go/main/App";
+import { useState } from 'react';
+import { Greet } from "../wailsjs/go/main/App";
+import { Input } from "@/components/ui/input"
 
 function App() {
     const [resultText, setResultText] = useState("Please enter your name below 👇");
@@ -15,7 +16,7 @@ function App() {
         <div id="App">
             <div id="result" className="result underline">{resultText}</div>
             <div id="input" className="input-box">
-                <input id="name" className="input" onChange={updateName} autoComplete="off" name="input" type="text"/>
+                <Input id="name" className="input" onChange={updateName} autoComplete="off" name="input" type="text" />
                 <button className="btn" onClick={greet}>Greet</button>
             </div>
         </div>
